@@ -240,7 +240,6 @@ export default function Chat() {
   const declineCall = () => setIncomingCall(null);
 
   if (loading) return <div>Loading...</div>;
-  if (!user) return <Navigate to="/" replace />;
 
   return (
     <div className="flex flex-col md:flex-row max-w-7xl mx-auto  min-h-screen bg-black text-white  shadow-lg overflow-hidden">
